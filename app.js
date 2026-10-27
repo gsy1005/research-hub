@@ -45,7 +45,7 @@ const ENTRIES = [
   },
   {
     id: 'tin-weekly-research', title: '锡研究周报', kind: '品种', groups: ['metals'],
-    url: location.hostname.endsWith('github.io') ? 'https://gsy1005.github.io/tin-research/weekly_full.html' : './tin/', description: '锡周度研究、三周期技术分析、供需平衡与全年情景测算。',
+    url: location.hostname.endsWith('github.io') ? 'https://gsy1005.github.io/tin-research/weekly_full.html' : './tin/index.html', description: '锡周度研究、三周期技术分析、供需平衡与全年情景测算。',
     tags: ['完整周报', '技术分析', '情景平衡'],
     keywords: '锡 周报 研究 技术分析 平衡表 全年 情景 库存 供给 需求 AI 耗锡 sn tin weekly technical balance'
   },

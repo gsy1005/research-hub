@@ -1,6 +1,6 @@
 'use strict';
 
-const CACHE_NAME = 'research-hub-v6';
+const CACHE_NAME = 'research-hub-v7';
 const APP_SHELL = [
   './', './index.html', './styles.css', './app.js', './manifest.webmanifest',
   './icons/icon.svg', './icons/icon-192.png', './icons/icon-512.png'
