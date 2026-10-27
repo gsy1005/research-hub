@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="宏观与有色研究入口，支持搜索、收藏和最近访问。">
+  <meta name="theme-color" content="#f6f7f4">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="研究总台">
+  <title>研究总台 · 宏观 × 有色</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js?v=4" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="研究总台首页">
+        <img src="./icons/icon.svg" alt="" width="38" height="38">
+        <span><strong>研究总台</strong><small>宏观 × 有色</small></span>
+      </a>
+      <button class="install-button" id="installButton" type="button" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 15v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"/></svg>
+        安装 App
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="pageTitle">
+        <p class="eyebrow">METALS &amp; MACRO RESEARCH</p>
+        <h1 id="pageTitle">找研究，直接搜。</h1>
+        <p>价格、库存、财报、宏观日报，一个入口直达。</p>
+      </section>
+
+      <section class="search-dock" aria-label="搜索与筛选">
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+          <label class="sr-only" for="searchInput">搜索研究入口</label>
+          <input id="searchInput" type="search" placeholder="搜索：锡、库存、财报、日报…" autocomplete="off" spellcheck="false" enterkeyhint="search">
+          <button id="clearSearch" class="clear-button" type="button" aria-label="清空搜索" hidden>×</button>
+          <kbd class="search-shortcut" aria-hidden="true">/</kbd>
+        </div>
+        <nav class="filters" id="filters" aria-label="入口分类">
+          <button type="button" data-filter="all" class="active" aria-pressed="true">全部</button>
+          <button type="button" data-filter="favorites" aria-pressed="false">收藏</button>
+          <button type="button" data-filter="recent" aria-pressed="false">最近</button>
+          <button type="button" data-filter="metals" aria-pressed="false">金属</button>
+          <button type="button" data-filter="macro" aria-pressed="false">宏观</button>
+          <button type="button" data-filter="data" aria-pressed="false">数据查询</button>
+          <button type="button" data-filter="financials" aria-pressed="false">财报</button>
+          <button type="button" data-filter="strategy" aria-pressed="false">策略</button>
+        </nav>
+      </section>
+
+      <section class="library" aria-labelledby="libraryTitle">
+        <div class="section-heading">
+          <h2 id="libraryTitle">全部入口</h2>
+          <span id="resultCount" aria-live="polite"></span>
+        </div>
+        <div class="entry-grid" id="entryGrid"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <div class="empty-icon" aria-hidden="true">⌕</div>
+          <h3 id="emptyTitle">没有找到相关入口</h3>
+          <p id="emptyText">换个关键词试试，例如“锡”“库存”或“日报”。</p>
+          <button id="resetButton" type="button">查看全部入口</button>
+        </div>
+      </section>
+      <noscript><p class="noscript">请启用 JavaScript 使用搜索。你也可以直接进入 <a href="https://amiya866.github.io/metals-framework/">有色金属研究框架</a> 或 <a href="https://gsy1005.github.io/research-workbench/">宏观研究工作台</a>。</p></noscript>
+    </main>
+
+    <footer><span class="status-dot" aria-hidden="true"></span> 数据管线每日更新 <span class="footer-divider">·</span> 收藏与访问记录仅保存在本机</footer>
+  </div>
+
+  <dialog id="installDialog" class="install-dialog" aria-labelledby="installTitle">
+    <button class="dialog-close" id="closeDialog" type="button" aria-label="关闭">×</button>
+    <img src="./icons/icon-192.png" alt="" width="56" height="56">
+    <h2 id="installTitle">添加到主屏幕</h2>
+    <p id="installInstructions">打开浏览器菜单，选择“添加到主屏幕”或“安装应用”。以后就能像普通 App 一样打开研究总台。</p>
+    <button class="dialog-confirm" id="confirmDialog" type="button">知道了</button>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
