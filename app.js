@@ -3,7 +3,7 @@
 const ENTRIES = [
   {
     id: 'metals', title: '有色金属研究框架', kind: '主站', groups: ['metals'], featured: true,
-    url: 'https://amiya866.github.io/metals-framework/', description: '铜、铝、锌、铅、镍、锡、锂、硅全产业链研究框架。',
+    url: 'https://gsy1005.github.io/metals-framework/', description: '铜、铝、锌、铅、镍、锡、锂、硅全产业链研究框架。',
     tags: ['8 品种', '550+ 图表', '产业链'],
     keywords: '金属 有色 铜 铝 锌 铅 镍 锡 锂 硅 cu al zn pb ni sn lc si 价格 供应 库存 需求 进出口 成本 平衡表 知识星球 信息速递 youse jinshu'
   },
@@ -15,25 +15,25 @@ const ENTRIES = [
   },
   {
     id: 'zsxq-live', title: '知识星球汇总面板', kind: '专题', groups: ['metals', 'macro'],
-    url: 'https://amiya866.github.io/metals-framework/zsxq.html', description: '方向雷达、外资研报精选与五类信息流时间线。',
+    url: 'https://gsy1005.github.io/metals-framework/zsxq.html', description: '方向雷达、外资研报精选与五类信息流时间线。',
     tags: ['方向雷达', '研报 PDF', '每日更新'],
     keywords: '知识星球 小作文 信息流 研报 纪要 外资 pdf 方向 多空 情绪 观点 xingqiu zsxq'
   },
   {
     id: 'zsxq-panel', title: '星球分类面板', kind: '专题', groups: ['metals', 'macro'],
-    url: 'https://amiya866.github.io/metals-framework/zsxq-panel/', description: '按研报、产业、宏观、权益和观点分类检索。',
+    url: 'https://gsy1005.github.io/metals-framework/zsxq-panel/', description: '按研报、产业、宏观、权益和观点分类检索。',
     tags: ['分类检索', '产业快讯', '观点讨论'],
     keywords: '知识星球 小作文 分类 研报纪要 产业快讯 宏观外汇 权益策略 观点讨论 xingqiu zsxq'
   },
   {
     id: 'xs-panel', title: '有色截面配置', kind: '策略', groups: ['metals', 'strategy'],
-    url: 'https://amiya866.github.io/metals-framework/xs-panel/', description: '六品种截面多空打分、日频信号与当前持仓。',
+    url: 'https://gsy1005.github.io/metals-framework/xs-panel/', description: '六品种截面多空打分、日频信号与当前持仓。',
     tags: ['多空信号', '每日持仓', '策略'],
     keywords: '有色 截面 多空 配置 策略 信号 持仓 回测 cu al zn pb ni sn xs celue'
   },
   {
     id: 'caibao', title: '财报入库平台', kind: '财报', groups: ['metals', 'financials'],
-    url: 'https://amiya866.github.io/caibao-hub/', description: '全球有色企业季度产量、公司指引与披露日历。',
+    url: 'https://gsy1005.github.io/caibao-hub/', description: '全球有色企业季度产量、公司指引与披露日历。',
     tags: ['季度产量', '公司指引', '披露日历'],
     keywords: '财报 产量 公司 企业 季报 年报 指引 披露 日历 铜 铝 锌 铅 镍 锡 锂 硅 caibao caiwu'
   },
@@ -51,37 +51,37 @@ const ENTRIES = [
   },
   {
     id: 'nickel', title: '镍市瞭望', kind: '品种', groups: ['metals'],
-    url: 'https://amiya866.github.io/nickel-panel/', description: '镍与不锈钢供需、库存、成本、政策和技术分析。',
+    url: 'https://gsy1005.github.io/nickel-panel/', description: '镍与不锈钢供需、库存、成本、政策和技术分析。',
     tags: ['镍', '不锈钢', '产业监测'],
     keywords: '镍 镍铁 不锈钢 印尼 ni 供需 库存 成本 政策 技术 nie nickel'
   },
   {
     id: 'data-panel', title: '数据接口总面板', kind: '数据', groups: ['metals', 'data'],
-    url: 'https://amiya866.github.io/metals-framework/data-panel/', description: '多数据源指标查询、时序图表与数据下载。',
+    url: 'https://gsy1005.github.io/metals-framework/data-panel/', description: '多数据源指标查询、时序图表与数据下载。',
     tags: ['SMM', 'Mysteel', '百川 / iFinD'],
     keywords: '数据 接口 指标 查询 时序 图表 下载 smm mysteel 百川 盈孚 ifind 现货 库存 产量 价格 shuju data'
   },
   {
     id: 'metal-news', title: '金属信息速递', kind: '直达', groups: ['metals'],
-    url: 'https://amiya866.github.io/metals-framework/#/m/news', description: '官方研报、分品种星球条目与有色权益策略。',
+    url: 'https://gsy1005.github.io/metals-framework/#/m/news', description: '官方研报、分品种星球条目与有色权益策略。',
     tags: ['信息流', '官方研报', '分品种'],
     keywords: '金属 信息 速递 新闻 快讯 资讯 研报 知识星球 小作文 权益 xinxi news'
   },
   {
     id: 'metal-supply', title: '金属供应模块', kind: '直达', groups: ['metals'],
-    url: 'https://amiya866.github.io/metals-framework/#/m/supply', description: '矿山产量、冶炼开工、供应扰动与公司产量。',
+    url: 'https://gsy1005.github.io/metals-framework/#/m/supply', description: '矿山产量、冶炼开工、供应扰动与公司产量。',
     tags: ['矿山', '冶炼', '供应扰动'],
     keywords: '金属 供应 矿山 矿产量 冶炼 开工率 扰动 事故 减产 复产 公司 财报 gongying supply'
   },
   {
     id: 'metal-price', title: '金属价格模块', kind: '直达', groups: ['metals'],
-    url: 'https://amiya866.github.io/metals-framework/#/m/price', description: '内外盘价格、升贴水、月差与跨市场比价。',
+    url: 'https://gsy1005.github.io/metals-framework/#/m/price', description: '内外盘价格、升贴水、月差与跨市场比价。',
     tags: ['内外盘', '升贴水', '月差'],
     keywords: '金属 价格 行情 lme shfe 内外盘 升水 贴水 月差 比价 基差 jiage price'
   },
   {
     id: 'direction', title: '星球方向雷达', kind: '直达', groups: ['metals', 'macro'],
-    url: 'https://amiya866.github.io/metals-framework/zsxq.html', description: '近 30 天多空表态统计，观察方向相对偏移。',
+    url: 'https://gsy1005.github.io/metals-framework/zsxq.html', description: '近 30 天多空表态统计，观察方向相对偏移。',
     tags: ['多空方向', '市场情绪', '30 天'],
     keywords: '星球 方向 雷达 看多 看空 多空 情绪 观点 市场 direction sentiment'
   },
