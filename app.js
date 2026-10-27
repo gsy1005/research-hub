@@ -9,7 +9,7 @@ const ENTRIES = [
   },
   {
     id: 'macro', title: '宏观研究工作台', kind: '主站', groups: ['macro'], featured: true,
-    url: 'https://gsy1005.github.io/research-workbench/', description: '流动性、债市、外汇、海外持仓与宏观数据工作台。',
+    url: 'https://gsy1005.github.io/research-workbench/reports/daily_latest.html', description: '流动性、债市、外汇、海外持仓与宏观数据工作台。',
     tags: ['日报', 'FedWatch', '海外宏观'],
     keywords: '宏观 流动性 债市 美债 外汇 汇率 cftc 持仓 fedwatch 非农 cpi ppi gdp pce 特朗普 研报 hongguan macro daily'
   },
